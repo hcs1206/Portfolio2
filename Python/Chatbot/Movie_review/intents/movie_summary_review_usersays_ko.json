@@ -1,0 +1,76 @@
+[
+  {
+    "id": "1e6431d6-425d-4c8f-a1a3-67600758849f",
+    "data": [
+      {
+        "text": "후기",
+        "alias": "movie_review",
+        "meta": "@movie_review",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ff029ed1-0629-4232-926d-31761c99f7ac",
+    "data": [
+      {
+        "text": "후기",
+        "alias": "movie_review",
+        "meta": "@movie_review",
+        "userDefined": false
+      },
+      {
+        "text": " 알려주세요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d9aec66b-e44b-4543-ac24-01c4e285adce",
+    "data": [
+      {
+        "text": "리뷰",
+        "alias": "movie_review",
+        "meta": "@movie_review",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3683b2fa-bb0e-4574-9d72-0d261cd44497",
+    "data": [
+      {
+        "text": "리뷰",
+        "alias": "movie_review",
+        "meta": "@movie_review",
+        "userDefined": false
+      },
+      {
+        "text": " 보",
+        "userDefined": false
+      },
+      {
+        "text": "여주",
+        "alias": "movie_actor",
+        "meta": "@movie_actor",
+        "userDefined": false
+      },
+      {
+        "text": "세요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

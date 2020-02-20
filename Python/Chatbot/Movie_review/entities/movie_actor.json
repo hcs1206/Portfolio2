@@ -1,0 +1,9 @@
+{
+  "id": "2fef469b-4615-4ab3-bab7-2329cf1ebc83",
+  "name": "movie_actor",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

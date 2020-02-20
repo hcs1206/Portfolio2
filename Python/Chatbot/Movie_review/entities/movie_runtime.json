@@ -1,0 +1,9 @@
+{
+  "id": "6173771c-44ec-4d16-9705-a77af2116158",
+  "name": "movie_runtime",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

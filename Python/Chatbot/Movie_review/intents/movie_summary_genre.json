@@ -1,0 +1,49 @@
+{
+  "id": "07312126-b594-4823-bbd0-00025b6cb2ac",
+  "parentId": "1d191965-5478-4a35-894e-6fca3be9a90f",
+  "rootParentId": "1d191965-5478-4a35-894e-6fca3be9a90f",
+  "name": "movie_summary_genre",
+  "auto": true,
+  "contexts": [
+    "movie_summary-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "movie_summary.movie_summary-custom-2",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "6ba036dc-178f-4eeb-8be5-8a40a09a6c9e",
+          "required": false,
+          "dataType": "@movie_genre",
+          "name": "movie_genre",
+          "value": "$movie_genre",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "ko",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

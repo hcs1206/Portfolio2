@@ -1,0 +1,196 @@
+[
+  {
+    "id": "5a995044-7afe-49b5-823e-615f345dbcda",
+    "data": [
+      {
+        "text": "장르",
+        "alias": "movie_genre",
+        "meta": "@movie_genre",
+        "userDefined": false
+      },
+      {
+        "text": "가 뭐에요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5dfaca10-a4e0-4499-839b-ac17a426be63",
+    "data": [
+      {
+        "text": "SF",
+        "alias": "movie_genre",
+        "meta": "@movie_genre",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "b988342d-73f4-41d6-bc59-1fd2de377ff1",
+    "data": [
+      {
+        "text": "애니메이션",
+        "alias": "movie_genre",
+        "meta": "@movie_genre",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fcc52622-990e-4c96-b8fc-6644798dd72a",
+    "data": [
+      {
+        "text": "판타지",
+        "alias": "movie_genre",
+        "meta": "@movie_genre",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6772a259-fd6c-4224-9f3a-478ddb2e1105",
+    "data": [
+      {
+        "text": "액션",
+        "alias": "movie_genre",
+        "meta": "@movie_genre",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "01e4c57e-47ae-43ec-81ca-1b179464698c",
+    "data": [
+      {
+        "text": "스릴러",
+        "alias": "movie_genre",
+        "meta": "@movie_genre",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "db768227-a16f-4548-9120-344b076c9476",
+    "data": [
+      {
+        "text": "호러",
+        "alias": "movie_genre",
+        "meta": "@movie_genre",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "22a72a84-2698-4304-9278-4f71f77041e4",
+    "data": [
+      {
+        "text": "멜로",
+        "alias": "movie_genre",
+        "meta": "@movie_genre",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a7016b3b-0a49-42da-b384-2b7ed6b2d326",
+    "data": [
+      {
+        "text": "로맨스",
+        "alias": "movie_genre",
+        "meta": "@movie_genre",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a7505cb8-b094-434c-81a5-ee1b348b95b2",
+    "data": [
+      {
+        "text": "코미디",
+        "alias": "movie_genre",
+        "meta": "@movie_genre",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "25d9f8b0-01fc-4d51-9f66-ef5d20774f45",
+    "data": [
+      {
+        "text": "장르",
+        "alias": "movie_genre",
+        "meta": "@movie_genre",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "06594590-d285-460b-9952-729c203ecedd",
+    "data": [
+      {
+        "text": "장르",
+        "alias": "movie_genre",
+        "meta": "@movie_genre",
+        "userDefined": false
+      },
+      {
+        "text": " 알려주세요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "145caaa8-c4c0-4594-ad95-5bb568964d44",
+    "data": [
+      {
+        "text": "장르",
+        "alias": "movie_genre",
+        "meta": "@movie_genre",
+        "userDefined": false
+      },
+      {
+        "text": "가 뭐야",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

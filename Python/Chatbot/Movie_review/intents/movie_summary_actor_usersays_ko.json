@@ -1,0 +1,78 @@
+[
+  {
+    "id": "6e75f324-0da2-44ef-ad76-fdfbca390180",
+    "data": [
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "주인공",
+        "alias": "movie_actor",
+        "meta": "@movie_actor",
+        "userDefined": true
+      },
+      {
+        "text": " 알려주세요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "000b860c-a0ab-4697-afc3-cdad04ebde02",
+    "data": [
+      {
+        "text": "배우",
+        "alias": "movie_actor",
+        "meta": "@movie_actor",
+        "userDefined": true
+      },
+      {
+        "text": " 알려주세요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d8d2d63c-592c-4274-a5eb-a0f5ffb511ca",
+    "data": [
+      {
+        "text": "출연자",
+        "alias": "movie_actor",
+        "meta": "@movie_actor",
+        "userDefined": true
+      },
+      {
+        "text": " 알려주세요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a7f89502-92ae-440f-82a5-24107e71a497",
+    "data": [
+      {
+        "text": "출연진",
+        "alias": "movie_actor",
+        "meta": "@movie_actor",
+        "userDefined": false
+      },
+      {
+        "text": " 알려주세요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

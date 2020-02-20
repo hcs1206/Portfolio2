@@ -1,0 +1,70 @@
+[
+  {
+    "id": "836e89f2-d040-4406-9b0b-1603159aef1e",
+    "data": [
+      {
+        "text": "상영시간",
+        "alias": "movie_runtime",
+        "meta": "@movie_runtime",
+        "userDefined": false
+      },
+      {
+        "text": " 알려주세요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "693dae60-85ed-41df-b2f2-1f490ac808d8",
+    "data": [
+      {
+        "text": "상영시간",
+        "alias": "movie_runtime",
+        "meta": "@movie_runtime",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ee4652ec-b0c2-49d3-ad85-ec1c78408a38",
+    "data": [
+      {
+        "text": "얼마",
+        "userDefined": false
+      },
+      {
+        "text": "나",
+        "alias": "movie_age_limit",
+        "meta": "@movie_age_limit",
+        "userDefined": false
+      },
+      {
+        "text": " 걸려요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a288bb44-912a-4d88-9c27-bf75e63e7211",
+    "data": [
+      {
+        "text": "런타임",
+        "alias": "movie_runtime",
+        "meta": "@movie_runtime",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

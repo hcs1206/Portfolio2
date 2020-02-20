@@ -1,0 +1,61 @@
+{
+  "id": "5719fc2f-da78-481b-a3ac-f4cea40ec475",
+  "parentId": "1d191965-5478-4a35-894e-6fca3be9a90f",
+  "rootParentId": "1d191965-5478-4a35-894e-6fca3be9a90f",
+  "name": "movie_summary_runtime",
+  "auto": true,
+  "contexts": [
+    "movie_summary-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "movie_summary.movie_summary-custom-3",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "97f6fe69-88d0-4f2f-9963-5354892ec787",
+          "required": false,
+          "dataType": "@movie_runtime",
+          "name": "movie_runtime",
+          "value": "$movie_runtime",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "248502a1-e8fc-459b-bfe9-c7877efb5b9d",
+          "required": false,
+          "dataType": "@movie_age_limit",
+          "name": "movie_age_limit",
+          "value": "$movie_age_limit",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "ko",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

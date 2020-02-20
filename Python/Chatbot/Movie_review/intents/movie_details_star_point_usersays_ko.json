@@ -1,0 +1,70 @@
+[
+  {
+    "id": "801052d7-75c9-484c-8fd6-3430254f15d1",
+    "data": [
+      {
+        "text": "별점",
+        "alias": "movie_star_point",
+        "meta": "@movie_star_point",
+        "userDefined": true
+      },
+      {
+        "text": " 알려줘",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "68daf29a-cb0e-4e31-a1d2-4b19a756c1d3",
+    "data": [
+      {
+        "text": "별점",
+        "alias": "movie_star_point",
+        "meta": "@movie_star_point",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b3188455-f857-4b5b-8458-8f74cc088125",
+    "data": [
+      {
+        "text": "평점",
+        "alias": "movie_star_point",
+        "meta": "@movie_star_point",
+        "userDefined": true
+      },
+      {
+        "text": " 알려줘",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ca51924b-fce9-467f-b594-dbfe735b33da",
+    "data": [
+      {
+        "text": "평점",
+        "alias": "movie_star_point",
+        "meta": "@movie_star_point",
+        "userDefined": true
+      },
+      {
+        "text": " 몇 점이야",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

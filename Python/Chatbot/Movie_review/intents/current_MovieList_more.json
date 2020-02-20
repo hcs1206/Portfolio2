@@ -1,0 +1,52 @@
+{
+  "id": "777e925e-3ed0-470e-800d-813a08e078ba",
+  "name": "current_MovieList_more",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 2,
+          "platform": "line",
+          "lang": "ko",
+          "condition": "",
+          "title": "1위 영화명",
+          "replies": [
+            "2위 영화명",
+            "3위 영화명",
+            "4위 영화명",
+            "5위 영화명",
+            "6위 영화명",
+            "7위 영화명",
+            "8위 영화명",
+            "9위 영화명",
+            "10 영화명",
+            "11위 영화명"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "ko",
+          "condition": "",
+          "speech": "어떤 영화가 궁금하세요?"
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "line": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

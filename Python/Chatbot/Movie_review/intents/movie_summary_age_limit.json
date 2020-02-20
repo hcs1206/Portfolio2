@@ -1,0 +1,73 @@
+{
+  "id": "5e650dd8-ec97-44e2-9a4d-5f967389d5b1",
+  "parentId": "1d191965-5478-4a35-894e-6fca3be9a90f",
+  "rootParentId": "1d191965-5478-4a35-894e-6fca3be9a90f",
+  "name": "movie_summary_age_limit",
+  "auto": true,
+  "contexts": [
+    "movie_summary-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "movie_summary.movie_summary-custom-6",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "503deced-bd50-4bd1-83ec-45b61298ba10",
+          "required": false,
+          "dataType": "@sys.date-time",
+          "name": "date-time",
+          "value": "$date-time",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "7a66469b-1610-4a62-9897-7951484ac47a",
+          "required": false,
+          "dataType": "@movie_age_limit",
+          "name": "movie_age_limit",
+          "value": "$movie_age_limit",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "dca10fb9-734f-469d-a9de-bbdd0c3660c2",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "ko",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

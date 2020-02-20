@@ -1,0 +1,65 @@
+{
+  "id": "cb766052-39c8-485f-acb7-c86cd0ce13c2",
+  "parentId": "1d191965-5478-4a35-894e-6fca3be9a90f",
+  "rootParentId": "1d191965-5478-4a35-894e-6fca3be9a90f",
+  "name": "movie_details_star_point",
+  "auto": true,
+  "contexts": [
+    "movie_summary-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "movie_summary.movie_summary-more",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "42c2de1c-3e8a-4995-bd29-9a6d96175591",
+          "required": false,
+          "dataType": "@movie_star_point",
+          "name": "movie_star_point",
+          "value": "$movie_star_point",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 2,
+          "platform": "line",
+          "lang": "ko",
+          "condition": "",
+          "title": "",
+          "replies": [
+            "1위 영화명",
+            "2위 영화명",
+            "3위 영화명",
+            "4위 영화명",
+            "5위 영화명"
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "ko",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "line": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

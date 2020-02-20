@@ -1,0 +1,9 @@
+{
+  "id": "0eec0139-288a-4d65-84b9-9d2fe11f8b05",
+  "name": "movie_age_limit",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

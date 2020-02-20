@@ -1,0 +1,9 @@
+{
+  "id": "7a94c490-0681-4e0e-9aef-35e264fdf8b1",
+  "name": "movie_star_point",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

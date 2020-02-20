@@ -1,0 +1,9 @@
+{
+  "id": "0c040b7b-9736-401c-b8e5-856788a7bff2",
+  "name": "movie_review",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "42bdfa4c-55a8-47cf-a487-44592631b25b",
+  "parentId": "1d191965-5478-4a35-894e-6fca3be9a90f",
+  "rootParentId": "1d191965-5478-4a35-894e-6fca3be9a90f",
+  "name": "movie_summary_actor",
+  "auto": true,
+  "contexts": [
+    "movie_summary-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "movie_summary.movie_summary-custom-5",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "c227bc4b-c7e6-4a9f-966c-e08db81ec5cf",
+          "required": false,
+          "dataType": "@movie_actor",
+          "name": "movie_actor",
+          "value": "$movie_actor",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "ko",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

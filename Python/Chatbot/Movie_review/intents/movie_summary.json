@@ -1,0 +1,59 @@
+{
+  "id": "1d191965-5478-4a35-894e-6fca3be9a90f",
+  "name": "movie_summary",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "movie_summary-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "4ab72407-7072-48c5-a6fa-ec3ceb17f13b",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "any",
+          "value": "$any",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 3,
+          "platform": "line",
+          "lang": "ko",
+          "condition": "",
+          "imageUrl": ""
+        },
+        {
+          "type": 0,
+          "lang": "ko",
+          "condition": "",
+          "speech": "\u0027$any\u0027 영화 정보입니다. 더 자세한 정보가 궁금하시면 물어봐주세요."
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "line": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

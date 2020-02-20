@@ -1,0 +1,88 @@
+[
+  {
+    "id": "300bfdee-1e40-4baa-b34e-692e3b8b59ae",
+    "data": [
+      {
+        "text": "몇 ",
+        "userDefined": false
+      },
+      {
+        "text": "세",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "이용가",
+        "alias": "movie_age_limit",
+        "meta": "@movie_age_limit",
+        "userDefined": false
+      },
+      {
+        "text": "에요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3befd056-70b9-4996-a439-37e1dc8d47a8",
+    "data": [
+      {
+        "text": "관람 등급",
+        "alias": "movie_age_limit",
+        "meta": "@movie_age_limit",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2b3465f0-688b-4bcb-9cc5-8fd45d7490a0",
+    "data": [
+      {
+        "text": "나이",
+        "alias": "movie_age_limit",
+        "meta": "@movie_age_limit",
+        "userDefined": false
+      },
+      {
+        "text": " 제한",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "68f5dcd0-8f0f-49fb-835e-c2a7c0891645",
+    "data": [
+      {
+        "text": "몇 살부터 볼 ",
+        "userDefined": false
+      },
+      {
+        "text": "수",
+        "alias": "date-time",
+        "meta": "@sys.date-time",
+        "userDefined": false
+      },
+      {
+        "text": " 있어요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

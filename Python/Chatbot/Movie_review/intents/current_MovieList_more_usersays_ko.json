@@ -1,0 +1,62 @@
+[
+  {
+    "id": "bddbbcb6-144e-4c08-9fc2-8768636d2d22",
+    "data": [
+      {
+        "text": "영화 정보 더 알고 싶어요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e6919c8d-ea5a-448f-9c26-9670057a4733",
+    "data": [
+      {
+        "text": "더 많은 영화 정보를 알고 싶어요",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5fc269f5-d203-481c-b85d-7648fcbb96d0",
+    "data": [
+      {
+        "text": "영화 더 보고 싶어",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2efcef7a-84fa-43c6-8480-a93cddc9a292",
+    "data": [
+      {
+        "text": "더 많은 영화 알려줘",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8d178772-97ce-4f17-9234-b64b7e3162d8",
+    "data": [
+      {
+        "text": "더 많은 영화 보기",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

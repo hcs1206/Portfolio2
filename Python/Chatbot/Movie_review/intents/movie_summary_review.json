@@ -1,0 +1,61 @@
+{
+  "id": "4df83d9e-294a-4113-b690-46be647fd538",
+  "parentId": "1d191965-5478-4a35-894e-6fca3be9a90f",
+  "rootParentId": "1d191965-5478-4a35-894e-6fca3be9a90f",
+  "name": "movie_summary_review",
+  "auto": true,
+  "contexts": [
+    "movie_summary-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "movie_summary.movie_summary-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "b4e5f778-23a5-440f-837e-4140006e8a85",
+          "required": false,
+          "dataType": "@movie_review",
+          "name": "movie_review",
+          "value": "$movie_review",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "b0dfc82f-b824-4c31-b9e1-6cb94ee169ee",
+          "required": false,
+          "dataType": "@movie_actor",
+          "name": "movie_actor",
+          "value": "$movie_actor",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "ko",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

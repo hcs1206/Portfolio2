@@ -1,345 +1,147 @@
+package SW;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.StringTokenizer;
 
-public class Baekjoon13460_±¸½½Å»Ãâ2 {
-	private static int N;
-	private static int M;
-	private static char[][] board;
-	private static int answer;
+public class Baekjoon13460_êµ¬ìŠ¬íƒˆì¶œ2 {
+	static int N;
+	static int M;
+	static int answer;
+	static int[] dr = { 0, 1, 0, -1 };
+	static int[] dc = { 1, 0, -1, 0 };
 
-	public static void main(String[] args) throws IOException {
+	static class Ball {
+		int r;
+		int c;
+
+		public Ball() {
+			super();
+		}
+
+		public Ball(int r, int c) {
+			super();
+			this.r = r;
+			this.c = c;
+		}
+
+	}
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		N = Integer.parseInt(st.nextToken());
 		M = Integer.parseInt(st.nextToken());
-		board = new char[N][M];
+		answer = 11;
 
-		int rbR = 0, rbC = 0, bbR = 0, bbC = 0;
+		char[][] map = new char[N][M];
+		Ball red = new Ball();
+		Ball blue = new Ball();
 
 		for (int i = 0; i < N; i++) {
 			String str = br.readLine();
 			for (int j = 0; j < M; j++) {
-				board[i][j] = str.charAt(j);
-				if (board[i][j] == 'R') {
-					rbR = i;
-					rbC = j;
-				} else if (board[i][j] == 'B') {
-					bbR = i;
-					bbC = j;
+				map[i][j] = str.charAt(j);
+				if (map[i][j] == 'R') {
+					red = new Ball(i, j);
+				} else if (map[i][j] == 'B') {
+					blue = new Ball(i, j);
 				}
 			}
 		}
 
-		answer = Integer.MAX_VALUE;
-
-		dfs(rbR, rbC, bbR, bbC, 0, -1);
-
-		System.out.println(answer == Integer.MAX_VALUE ? -1 : answer);
+		moveBall(map, -4, 0, red, blue);
+		
+		System.out.println(answer > 10 ? -1 : answer);
 
 	}
 
-	private static void dfs(int rbR, int rbC, int bbR, int bbC, int count, int dir) {
-		if (board[rbR][rbC] == 'O') {
-			if (board[bbR][bbC] == 'O')
-				return;
-
-			if (answer > count)
-				answer = count;
-		} else if (board[bbR][bbC] == 'O') {
+	private static void moveBall(char[][] tempMap, int beforeDest, int moveCount, Ball red, Ball blue) {		
+		if (moveCount >= answer)
 			return;
-		} else {
-			if (count < 10) {
-				if (dir != 0) { // ÁÂ ¿ì
-					/////////////// ÁÂ ///////////////
-					if (rbC < bbC) {
-						int nRbC;
-						int nBbC;
-						for (int i = rbC - 1;; i--) {
-							if (board[rbR][i] == 'O') {
-								nRbC = i;
-								break;
-							}
 
-							if (board[rbR][i] == '#') {
-								nRbC = i + 1;
-								break;
-							}
-						}
+		for (int dest = 0; dest < 4; dest++) {
+			if (dest != (beforeDest + 2) % 4 && dest != beforeDest) {
+				
+				char[][] copyMap = new char[tempMap.length][tempMap[0].length];
+				for (int i = 0; i < copyMap.length; i++) {
+					System.arraycopy(tempMap[i], 0, copyMap[i], 0, tempMap[i].length);
+				}
 
-						for (int i = bbC - 1;; i--) {
-							if (board[bbR][i] == 'O') {
-								nBbC = i;
-								break;
-							}
+				int goalCnt = 0;
+				int rnR = red.r + dr[dest];
+				int rnC = red.c + dc[dest];
 
-							if (board[bbR][i] == '#') {
-								nBbC = i + 1;
-								break;
-							}
+				int bnR = blue.r + dr[dest];
+				int bnC = blue.c + dc[dest];
 
-							if (bbR == rbR && i == nRbC) {
-								nBbC = i + 1;
-								break;
-							}
-						}
+				while (copyMap[bnR][bnC] == '.') {
+					bnR += dr[dest];
+					bnC += dc[dest];
+				}
 
-						dfs(rbR, nRbC, bbR, nBbC, count + 1, 0);
-					} else {
-						int nRbC;
-						int nBbC;
+				if (copyMap[bnR][bnC] == 'O') {
+					goalCnt = -2;
+					copyMap[blue.r][blue.c] = '.';
 
-						for (int i = bbC - 1;; i--) {
-							if (board[bbR][i] == 'O') {
-								nBbC = i;
-								break;
-							}
+				} else {
+					bnR -= dr[dest];
+					bnC -= dc[dest];
+					copyMap[blue.r][blue.c] = '.';
+					copyMap[bnR][bnC] = 'B';
+				}
+				
 
-							if (board[bbR][i] == '#') {
-								nBbC = i + 1;
-								break;
-							}
-						}
+				while (copyMap[rnR][rnC] == '.') {
+					rnR += dr[dest];
+					rnC += dc[dest];
+				}
+				if (copyMap[rnR][rnC] == 'O') {
+					goalCnt++;
+					copyMap[red.r][red.c] = '.';
 
-						for (int i = rbC - 1;; i--) {
-							if (board[rbR][i] == 'O') {
-								nRbC = i;
-								break;
-							}
+				} else {
+					rnR -= dr[dest];
+					rnC -= dc[dest];
+					copyMap[red.r][red.c] = '.';
+					copyMap[rnR][rnC] = 'R';
+				}
+				
+				copyMap[bnR][bnC] = '.';
+				bnR += dr[dest];
+				bnC += dc[dest];
+				while (copyMap[bnR][bnC] == '.') {
+					bnR += dr[dest];
+					bnC += dc[dest];
+				}
 
-							if (board[rbR][i] == '#') {
-								nRbC = i + 1;
-								break;
-							}
+				if (copyMap[bnR][bnC] == 'O') {
+					goalCnt = -2;
+					copyMap[blue.r][blue.c] = '.';
 
-							if (bbR == rbR && i == nBbC) {
-								nRbC = i + 1;
-								break;
-							}
-						}
+				} else {
+					bnR -= dr[dest];
+					bnC -= dc[dest];
+					copyMap[blue.r][blue.c] = '.';
+					copyMap[bnR][bnC] = 'B';
+				}
 
-						dfs(rbR, nRbC, bbR, nBbC, count + 1, 0);
-					}
+				if (goalCnt == 1) {
+					if (moveCount + 1 < answer)
+						answer = moveCount + 1;
+				} else if (goalCnt == 0) {
+					moveBall(copyMap, dest, moveCount + 1, new Ball(rnR, rnC), new Ball(bnR, bnC));
+				} else {
+					continue;
+				}
 
-					/////////////////// ¿ì //////////////////
-					if (rbC < bbC) {
-						int nRbC;
-						int nBbC;
-
-						for (int i = bbC + 1;; i++) {
-							if (board[bbR][i] == 'O') {
-								nBbC = i;
-								break;
-							}
-
-							if (board[bbR][i] == '#') {
-								nBbC = i - 1;
-								break;
-							}
-						}
-
-						for (int i = rbC + 1;; i++) {
-							if (board[rbR][i] == 'O') {
-								nRbC = i;
-								break;
-							}
-
-							if (board[rbR][i] == '#') {
-								nRbC = i - 1;
-								break;
-							}
-
-							if (bbR == rbR && i == nBbC) {
-								nRbC = i - 1;
-								break;
-							}
-						}
-
-						dfs(rbR, nRbC, bbR, nBbC, count + 1, 0);
-					} else { // ¿ì
-						int nRbC;
-						int nBbC;
-						for (int i = rbC + 1;; i++) {
-							if (board[rbR][i] == 'O') {
-								nRbC = i;
-								break;
-							}
-
-							if (board[rbR][i] == '#') {
-								nRbC = i - 1;
-								break;
-							}
-						}
-
-						for (int i = bbC + 1;; i++) {
-							if (board[bbR][i] == 'O') {
-								nBbC = i;
-								break;
-							}
-
-							if (board[bbR][i] == '#') {
-								nBbC = i - 1;
-								break;
-							}
-
-							if (bbR == rbR && i == nRbC) {
-								nBbC = i - 1;
-								break;
-							}
-						}
-
-						dfs(rbR, nRbC, bbR, nBbC, count + 1, 0);
-					}
-
-				} // end of ÁÂ¿ì
-
-				if (dir != 1) { // »ó ÇÏ
-
-					//////////////////// ÇÏ ///////////////////
-					if (rbR < bbR) {
-						int nRbR;
-						int nBbR;
-
-						for (int i = bbR + 1;; i++) {
-							if (board[i][bbC] == 'O') {
-								nBbR = i;
-								break;
-							}
-
-							if (board[i][bbC] == '#') {
-								nBbR = i - 1;
-								break;
-							}
-						}
-
-						for (int i = rbR + 1;; i++) {
-							if (board[i][rbC] == 'O') {
-								nRbR = i;
-								break;
-							}
-
-							if (board[i][rbC] == '#') {
-								nRbR = i - 1;
-								break;
-							}
-
-							if (rbC == bbC && i == nBbR) {
-								nRbR = i - 1;
-								break;
-							}
-						}
-
-						dfs(nRbR, rbC, nBbR, bbC, count + 1, 1);
-					} else {
-						int nRbR;
-						int nBbR;
-
-						for (int i = rbR + 1;; i++) {
-							if (board[i][rbC] == 'O') {
-								nRbR = i;
-								break;
-							}
-
-							if (board[i][rbC] == '#') {
-								nRbR = i - 1;
-								break;
-							}
-						}
-
-						for (int i = bbR + 1;; i++) {
-							if (board[i][bbC] == 'O') {
-								nBbR = i;
-								break;
-							}
-
-							if (board[i][bbC] == '#') {
-								nBbR = i - 1;
-								break;
-							}
-
-							if (rbC == bbC && i == nRbR) {
-								nBbR = i - 1;
-								break;
-							}
-						}
-
-						dfs(nRbR, rbC, nBbR, bbC, count + 1, 1);
-					}
-
-					//////////////////// »ó ///////////////////
-					if (rbR < bbR) {
-						int nRbR;
-						int nBbR;
-
-						for (int i = rbR - 1;; i--) {
-							if (board[i][rbC] == 'O') {
-								nRbR = i;
-								break;
-							}
-
-							if (board[i][rbC] == '#') {
-								nRbR = i + 1;
-								break;
-							}
-						}
-
-						for (int i = bbR - 1;; i--) {
-							if (board[i][bbC] == 'O') {
-								nBbR = i;
-								break;
-							}
-
-							if (board[i][bbC] == '#') {
-								nBbR = i + 1;
-								break;
-							}
-
-							if (rbC == bbC && i == nRbR) {
-								nBbR = i + 1;
-								break;
-							}
-						}
-
-						dfs(nRbR, rbC, nBbR, bbC, count + 1, 1);
-					} else {
-						int nRbR;
-						int nBbR;
-
-						for (int i = bbR - 1;; i--) {
-							if (board[i][bbC] == 'O') {
-								nBbR = i;
-								break;
-							}
-
-							if (board[i][bbC] == '#') {
-								nBbR = i + 1;
-								break;
-							}
-						}
-
-						for (int i = rbR - 1;; i--) {
-							if (board[i][rbC] == 'O') {
-								nRbR = i;
-								break;
-							}
-
-							if (board[i][rbC] == '#') {
-								nRbR = i + 1;
-								break;
-							}
-
-							if (rbC == bbC && i == nBbR) {
-								nRbR = i + 1;
-								break;
-							}
-						}
-
-						dfs(nRbR, rbC, nBbR, bbC, count + 1, 1);
-					}
-				} // end of »ó ÇÏ
-
-			} // end of count
+			}
 		}
 
 	}
